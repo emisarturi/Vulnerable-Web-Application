@@ -12,7 +12,7 @@ jobs:
         with:
           ref: master
       - name: ZAP Scan
-        uses: zaproxy/action-baseline@v0.7.0
+        uses: zaproxy/action-full-scan@v0.4.0
         with:          
           docker_name: 'owasp/zap2docker-stable'
           target: 'http://ip172-18-0-16-chbb4081k7jg00fbrndg-80.direct.labs.play-with-docker.com/www/homepage.html'
